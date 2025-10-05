@@ -17,17 +17,3 @@ graph LR
     SubnetP --- RT[RT 0.0.0.0/0 -> IGW]
     EC2 --- SubnetP
   end
-
-Requisitos
-
-AWS CLI con perfil tf
-
-Terraform ≥ 1.6
-
-terraform init
-terraform fmt && terraform validate
-terraform plan
-terraform apply
-terraform output            # public_ip / public_dns
-# probar en navegador: http://<public_ip>
-terraform destroy           # limpiar y evitar costos
