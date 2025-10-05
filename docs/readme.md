@@ -12,10 +12,10 @@ Infraestructura como Código básica: se crea una **VPC pública**, **subnet**, 
 graph LR
   User -->|HTTP 80| EC2[EC2 Apache]
   subgraph AWS
-    VPC---SubnetP[Subnet Pública]
-    SubnetP---IGW[Internet Gateway]
-    SubnetP---RT[Route Table 0.0.0.0/0 -> IGW]
-    EC2---SubnetP
+    VPC --- SubnetP[Subnet Publica]
+    SubnetP --- IGW[Internet Gateway]
+    SubnetP --- RT[RouteTable: 0.0.0.0/0 -> IGW]
+    EC2 --- SubnetP
   end
 
 AWS CLI con perfil tf
